@@ -10,6 +10,7 @@ class App extends Component {
       <div className={`${BASE}`}>
         <div className={`${BASE}__header`}>
           <div className={`${BASE}__containerHelmMenu`}>
+            Ciao
             <div className={`${BASE}__helmOptions`}>
               <div className={`${BASE}__helmPhotos`}></div>
               <div className={`${BASE}__helmContacts`}></div>
