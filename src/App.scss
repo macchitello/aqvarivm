@@ -1,0 +1,46 @@
+.max-app {
+
+  &__header {
+    background-color: #dddddd;
+    height: 200px;
+    left: 0;
+    position: relative;;
+    top: 0;
+    width: 100%;
+  }
+
+  &__containerHelmMenu {
+      background-color: #d5d5d5;
+      height: 100%;
+      margin: 0 auto;
+      position: relative;
+      width: 400px;
+  }
+
+
+  // &__helmOptions {
+  //     background-color: #d5d5d5;
+  //     height: 100%;
+  //     margin: 0 auto;
+  //     width: 400px;
+  // }
+  //
+  // &__helmPhotos {
+  //     background-color: #d5d5d5;
+  //     height: 100%;
+  //     margin: 0 auto;
+  //     width: 400px;
+  // }
+  //
+  // &__helmContacts {
+  //     background-color: #d5d5d5;
+  //     height: 100%;
+  //     margin: 0 auto;
+  //     width: 400px;
+  // }
+
+
+  &__main {
+
+  }
+}
