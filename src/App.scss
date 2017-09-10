@@ -1,46 +1,46 @@
 .max-app {
 
+  &__main {
+
+  }
+
   &__header {
-    background-color: #dddddd;
-    height: 200px;
+    background-color: #37474F;
+    bottom: auto;
+    height: 100px;
     left: 0;
-    position: relative;;
+    position: fixed;
+    right: auto;
     top: 0;
     width: 100%;
   }
 
-  &__containerHelmMenu {
-      background-color: #d5d5d5;
-      height: 100%;
-      margin: 0 auto;
-      position: relative;
-      width: 400px;
+  &__headerText {
+    color: #B0BEC5;
+    display: block;
+    font-size: 18px;
+    height: 54px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
   }
 
-
-  // &__helmOptions {
-  //     background-color: #d5d5d5;
-  //     height: 100%;
-  //     margin: 0 auto;
-  //     width: 400px;
-  // }
-  //
-  // &__helmPhotos {
-  //     background-color: #d5d5d5;
-  //     height: 100%;
-  //     margin: 0 auto;
-  //     width: 400px;
-  // }
-  //
-  // &__helmContacts {
-  //     background-color: #d5d5d5;
-  //     height: 100%;
-  //     margin: 0 auto;
-  //     width: 400px;
-  // }
-
-
-  &__main {
-
+  &__headerNavigation {
+    color: #B0BEC5;
+    display: flex;
+    font-size: 18px;
+    height: 46px;
+    justify-content: center;
+    line-height: 45px;
+    text-align: center;
+    width: 100%;
   }
+
+  &__navigationItem {
+    display: flex;
+    align-items: center;
+    margin: 0 16px;
+  }
+
 }

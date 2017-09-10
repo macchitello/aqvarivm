@@ -1,25 +1,33 @@
 .max-app__header {
-  background-color: #dddddd;
-  height: 200px;
+  background-color: #37474F;
+  bottom: auto;
+  height: 100px;
   left: 0;
-  position: relative;
+  position: fixed;
+  right: auto;
   top: 0;
   width: 100%; }
-.max-app__containerHelmMenu {
-  background-color: #d5d5d5;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-  width: 400px; }
-.max-app__helm {
-  background: url("./images/timone.png");
-  background-repeat: no-repeat;
-  background-size: 100px;
-  height: 100px;
-  left: 50%;
-  margin-left: -50px;
-  position: absolute;
-  top: -50px;
-  width: 100px; }
+.max-app__headerText {
+  color: #B0BEC5;
+  display: block;
+  font-size: 18px;
+  height: 54px;
+  line-height: 53px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%; }
+.max-app__headerNavigation {
+  color: #B0BEC5;
+  display: flex;
+  font-size: 18px;
+  height: 46px;
+  justify-content: center;
+  line-height: 45px;
+  text-align: center;
+  width: 100%; }
+.max-app__navigationItem {
+  display: flex;
+  align-items: center;
+  margin: 0 16px; }
 
 /*# sourceMappingURL=App.css.map */
