@@ -4,8 +4,6 @@ import { Route, Switch } from 'react-router-dom';
 import { ConnectedRouter } from 'react-router-redux';
 import { Provider } from 'react-redux';
 import App from './assets/containers/App';
-import App from './assets/components/App';
-import App from './assets/containers/App';
 import configureStore, { history } from './assets/configureStore';
 import registerServiceWorker from './assets/registerServiceWorker';
 
