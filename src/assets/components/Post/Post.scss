@@ -1,0 +1,31 @@
+.ui.card.aqv-post {
+  width: 380px;
+  margin: 0 16px 16px 0;
+
+  &--newPost {
+    margin: 0;
+  }
+
+  .aqv-post__image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .content {
+    height: 130px;
+  }
+
+  .extra.content {
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .aqv-post.ui.card {
+    margin: 0 0 16px 0;
+  }
+}

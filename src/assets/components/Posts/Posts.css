@@ -5,11 +5,10 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
 @media (max-width: 480px) {
   .aqv-posts {
-    flex-direction: column;
-  }
-}
+    flex-direction: column; } }
+
+/*# sourceMappingURL=Posts.css.map */

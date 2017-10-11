@@ -8,9 +8,7 @@ function mapDispatchToProps(dispatch) {
 }
 
 function mapStateToProps(state) {
-  return {
-    section: state.getIn(['application', 'section'])
-  };
+  return {};
 }
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));

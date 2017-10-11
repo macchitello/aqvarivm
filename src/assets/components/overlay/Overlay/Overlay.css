@@ -1,0 +1,42 @@
+.mb-container-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  padding-top: 54px;
+  z-index: zIndex(5); }
+  .mb-container-overlay .mb-overlay {
+    width: 100%;
+    height: 100%;
+    transition: background ease 200ms;
+    background: transparent; }
+  .mb-container-overlay--visible {
+    display: block; }
+    .mb-container-overlay--visible--navigation-panel-open .mb-overlay {
+      background: transparent; }
+
+@media (max-width: 1200px) {
+  .mb-container-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    padding-top: 54px;
+    z-index: zIndex(5); }
+    .mb-container-overlay .mb-overlay {
+      width: 100%;
+      height: 100%;
+      transition: background ease 200ms;
+      background: transparent; }
+    .mb-container-overlay--visible {
+      display: block; }
+      .mb-container-overlay--visible--navigation-panel-open .mb-overlay {
+        background: transparent; }
+      .mb-container-overlay--visible .mb-overlay {
+        background: rgba(0, 0, 0, 0.4); } }
+
+/*# sourceMappingURL=Overlay.css.map */

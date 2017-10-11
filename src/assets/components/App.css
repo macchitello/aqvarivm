@@ -1,7 +1,71 @@
-.max-app {
+body.ReactModal__Body--open .ReactModalPortal {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: auto;
+  z-index: 5000; }
+  body.ReactModal__Body--open .ReactModalPortal .ReactModal__Overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: zIndex("modal-overlay"); }
+  body.ReactModal__Body--open .ReactModalPortal .ReactModal__Content {
+    box-shadow: 0px 0px 200px 20px rgba(0, 0, 0, 0.3);
+    outline: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    opacity: 0.5;
+    overflow: hidden;
+    transform: translateX(-50%) translateY(-40%);
+    transition: opacity ease-out 250ms, transform ease-out 250ms; }
+    body.ReactModal__Body--open .ReactModalPortal .ReactModal__Content--after-open {
+      opacity: 1;
+      transform: translateX(-50%) translateY(-50%); }
+    body.ReactModal__Body--open .ReactModalPortal .ReactModal__Content--after-close {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-40%); }
+@media (max-height: 420px) {
+  body.ReactModal__Body--open .ReactModalPortal .ReactModal__Content {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    top: 48px;
+    left: 0;
+    right: auto;
+    bottom: auto;
+    transition: opacity ease-out 250ms, top ease-out 250ms; }
+    body.ReactModal__Body--open .ReactModalPortal .ReactModal__Content--after-open {
+      opacity: 1;
+      top: 0;
+      transform: translateX(0) translateY(0); } }
+@media (max-width: 480px) {
+  body.ReactModal__Body--open .ReactModalPortal .ReactModal__Content {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    top: 48px;
+    left: 0;
+    right: auto;
+    bottom: auto;
+    transition: opacity ease-out 250ms, top ease-out 250ms; }
+    body.ReactModal__Body--open .ReactModalPortal .ReactModal__Content--after-open {
+      opacity: 1;
+      top: 0;
+      transform: translateX(0) translateY(0); } }
+body .aqv-app {
   height: 100%;
   width: 100%; }
-  .max-app__main {
+  body .aqv-app__main {
     position: relative;
     top: 0;
     left: 0;
@@ -12,39 +76,31 @@
     height: 100%;
     width: 100%;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
     flex-direction: row;
     z-index: 1; }
-  .max-app__card.ui.card {
-    width: 380px;
-    margin: 0 16px 0 0; }
-  .max-app__userImage {
-    cursor: pointer; }
-  .max-app__pushable.ui.segment {
+  body .aqv-app__pushable.ui.segment {
     border: none;
     border-radius: 0;
     width: 100%; }
-  .ui.menu .max-app__menuItem {
+  .ui.menu body .aqv-app__menuItem {
     cursor: pointer;
     padding: 0; }
-    .ui.menu .max-app__menuItem:hover {
+    .ui.menu body .aqv-app__menuItem:hover {
       background-color: #282a2b; }
-  .ui.menu .max-app__menuItemLink {
+  .ui.menu body .aqv-app__menuItemLink {
     width: 100%;
     height: 100%;
     display: block;
     padding: 24px;
     font-size: 16px; }
-    .ui.menu .max-app__menuItemLink:hover {
+    .ui.menu body .aqv-app__menuItemLink:hover {
       background-color: #282a2b; }
-    .ui.menu .max-app__menuItemLink:active {
+    .ui.menu body .aqv-app__menuItemLink:active {
       transform: scale(0.95); }
-  .max-app__pusher.pusher {
-    padding: 16px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start; }
-  .max-app__header {
+  body .aqv-app__userImage {
+    cursor: pointer; }
+  body .aqv-app__header {
     background-color: #37474F;
     bottom: auto;
     height: 56px;
@@ -55,7 +111,7 @@
     top: 0;
     width: 100%;
     z-index: 2; }
-  .max-app__headerText {
+  body .aqv-app__headerText {
     color: #B0BEC5;
     display: flex;
     font-size: 18px;
@@ -66,29 +122,52 @@
     flex-direction: row;
     align-items: center;
     justify-content: center; }
-    .max-app__headerText > h1 {
+    body .aqv-app__headerText > h1 {
       margin: 0; }
-  .max-app__toggleMenu {
+  body .aqv-app__toggleMenu {
     position: absolute;
     top: 13px;
     left: 7px;
+    right: auto;
+    border: none;
+    background: none;
+    color: #FFFFFF;
+    bottom: auto;
+    font-size: 26px;
+    outline: 0;
+    cursor: pointer; }
+    body .aqv-app__toggleMenu:hover {
+      opacity: 0.87; }
+    body .aqv-app__toggleMenu:active {
+      transform: scale(0.95); }
+  body .aqv-app__newPostTrigger {
+    position: absolute;
+    top: 13px;
+    left: auto;
+    right: 7px;
+    bottom: auto;
     border: none;
     background: none;
     color: #FFFFFF;
     font-size: 26px;
     outline: 0;
     cursor: pointer; }
-    .max-app__toggleMenu:hover {
+    body .aqv-app__newPostTrigger:hover {
       opacity: 0.87; }
-    .max-app__toggleMenu:active {
+    body .aqv-app__newPostTrigger:active {
       transform: scale(0.95); }
-
 @media (max-width: 480px) {
-  .max-app__pusher.pusher {
+  body .max-app__pusher.pusher {
     padding: 16px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start; } }
+    justify-content: flex-start; }
+  body .max-app__card.ui.card {
+    margin: 0 0 16px 0; } }
+body .aqv-post {
+  height: 100%;
+  width: 100%;
+  background: #FFFFFF; }
 
 /*# sourceMappingURL=App.css.map */

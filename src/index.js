@@ -4,14 +4,14 @@ import { Route, Switch } from 'react-router-dom';
 import { ConnectedRouter } from 'react-router-redux';
 import { Provider } from 'react-redux';
 import App from './assets/containers/App';
+import Homepage from './assets/containers/Homepage';
 import configureStore, { history } from './assets/configureStore';
 import registerServiceWorker from './assets/registerServiceWorker';
 
-// Async Routers (For code splitting):
-const Application = () => {
-  const store = configureStore();
-  registerServiceWorker();
+const store = configureStore();
 
+const Application = () => {
+  registerServiceWorker();
   console.log('INIT APP!');
 
   render(
@@ -19,7 +19,7 @@ const Application = () => {
       <ConnectedRouter history={history}>
         <App>
           <Switch>
-            <Route exact path="/" component={App} />
+            <Route exact path="/" component={Homepage} />
           </Switch>
         </App>
       </ConnectedRouter>
