@@ -2,7 +2,7 @@
   "name": "max",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nikosantoro.github.io/aqvarivm",
+  "homepage": "https://nikosantoro.it/aqvarivm",
   "dependencies": {
     "autoprefixer": "7.1.2",
     "babel-core": "6.25.0",
